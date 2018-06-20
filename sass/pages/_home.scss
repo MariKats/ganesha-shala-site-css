@@ -1,35 +1,46 @@
 .section-about {
   background-color: $color-grey-light-1;
-  padding: 17rem 0;
-  margin-top: -9rem;
+  padding: 10rem 0;
 }
 
 .section-features {
-  // padding: 13rem 0;
-  // background-color: lighten($color-grey-light-3, 11%);
   &__features-box {
-    margin-top: -6.3rem;
-    padding: 17rem 0 20rem;
+    padding: 15rem 0;
     background-image: linear-gradient(to left bottom,
       rgba($color-primary-light, 0.45),
       rgba($color-primary-dark, 0.45)),
       url(../img/stones.jpg);
       background-size: cover;
-      transform: skewY(-4deg);
-
-      & > * {
-        transform: skewY(4deg);
-      }
   }
 }
 
 .section-events {
   background-color: $color-grey-light-1;
-  padding: 18rem 0 12rem 0;
-  margin-top: -9rem;
+  padding: 10rem 0;
 }
 
 .section-testimonials {
-  background-color: $color-grey-light-3;
+  position: relative;
   padding: 10rem 0;
+}
+
+.section-subscribe {
+  padding: 10rem 0;
+  background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+}
+
+.subscribe {
+  background-image: linear-gradient(105deg,
+                                  rgba($color-white, .75) 0%,
+                                  rgba($color-white, .75) 50%,
+                                  transparent 50%),
+                            url(../img/subscribe.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+
+  &__form {
+    width: 57%;
+    padding: 6rem;
+  }
 }
