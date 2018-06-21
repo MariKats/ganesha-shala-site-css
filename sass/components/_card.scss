@@ -24,16 +24,10 @@
   &--back {
     transform: rotateY(180deg);
 
-    &--1{
-        background-image: linear-gradient(to right bottom, $color-orange-light, $color-orange-dark);
-    }
-
-    &--2{
-        background-image: linear-gradient(to right bottom, $color-blue-light, $color-blue-dark);
-    }
-
-    &--3{
-        background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark);
+    &--1,
+    &--2,
+    &--3 {
+        background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
     }
   }
 }
@@ -54,18 +48,18 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
     &--1 {
-      background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark), url(../img/yoga-shala.jpg);
-      background-blend-mode: luminosity;
+      background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/events1.jpg);
+      background-blend-mode: screen;
     }
 
     &--2 {
-      background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/yoga-shala.jpg);
-      background-blend-mode: exclusion;
+      background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/events2.jpg);
+      background-blend-mode: screen;
     }
 
     &--3 {
-      background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark), url(../img/yoga-shala.jpg);
-      background-blend-mode: exclusion;
+      background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/events3.jpg);
+      background-blend-mode: screen;
     }
   }
 
@@ -86,16 +80,10 @@
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
 
-    &--1 {
-      background-image: linear-gradient(to right bottom, rgba($color-orange-light, .85), rgba($color-orange-dark, .85));
-    }
-
-    &--2 {
-      background-image: linear-gradient(to right bottom, rgba($color-blue-light, .85), rgba($color-blue-dark, .85));
-    }
-
+    &--1,
+    &--2,
     &--3 {
-      background-image: linear-gradient(to right bottom, rgba($color-green-light, .85), rgba($color-green-dark, .85));
+      background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba($color-primary-dark, .85));
     }
   }
 
