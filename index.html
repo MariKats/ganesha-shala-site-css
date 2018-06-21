@@ -11,6 +11,14 @@
         <link rel="shortcut icon" type="image/png" href="img/favicon-96x96.png">
 
         <title>Ganesha Shala | Ashtanga Yoga</title>
+
+        <script type="text/javascript">
+          let toggleMenu = () => {
+              let menu = document.getElementById('navi-toggle')
+              menu.checked = false
+            }
+        </script>
+        
     </head>
 
     <body>
@@ -26,11 +34,11 @@
 
         <nav class="navigation__nav">
           <ul class="navigation__list">
-            <li class="navigation__item"><a href="#section-about" class="navigation__link"><span>01</span>About Ganesha Shala</a></li>
-            <li class="navigation__item"><a href="#section-features" class="navigation__link"><span>02</span>Benefits of Asthanga Yoga</a></li>
-            <li class="navigation__item"><a href="#section-events" class="navigation__link"><span>03</span>Featured Events</a></li>
-            <li class="navigation__item"><a href="#section-testimonials" class="navigation__link"><span>04</span>Student Testimonials</a></li>
-            <li class="navigation__item"><a href="#section-subscribe" class="navigation__link"><span>05</span>Subscribe to our Newsletter</a></li>
+            <li class="navigation__item"><a onclick="toggleMenu()" href="#section-about" class="navigation__link"><span>01</span>About Ganesha Shala</a></li>
+            <li class="navigation__item"><a onclick="toggleMenu()" href="#section-features" class="navigation__link"><span>02</span>Benefits of Asthanga Yoga</a></li>
+            <li class="navigation__item"><a onclick="toggleMenu()" href="#section-events" class="navigation__link"><span>03</span>Featured Events</a></li>
+            <li class="navigation__item"><a onclick="toggleMenu()" href="#section-testimonials" class="navigation__link"><span>04</span>Student Testimonials</a></li>
+            <li class="navigation__item"><a onclick="toggleMenu()" href="#section-subscribe" class="navigation__link"><span>05</span>Subscribe to our Newsletter</a></li>
           </ul>
         </nav>
       </div>
