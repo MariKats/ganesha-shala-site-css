@@ -3,11 +3,10 @@
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba($color-black, .1);
   background-color: rgba($color-white, .55);
-  border-radius: 3px;
+  border-radius: $border-radius-rounded;
   padding: 4.5rem;
   padding-left: 7.5rem;
-  font-size: $default-font-size;
-  transform: skewX(-7deg);
+  font-size: 1.6rem;
 
   &__shape {
     width: 12.5rem;
@@ -17,7 +16,8 @@
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
-    transform: translateX(-3rem) skewX(7deg);
+    transform: translateX(-3rem);
+    // transform: translateX(-3rem) skewX(7deg);
     position: relative;
   }
 
@@ -29,7 +29,7 @@
   }
 
   &__text {
-    transform: skewX(7deg);
+    // transform: skewX(7deg);
   }
 
   &__caption {

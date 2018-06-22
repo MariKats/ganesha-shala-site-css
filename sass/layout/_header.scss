@@ -6,14 +6,23 @@
     url(../img/header1.jpg);
   background-size: cover;
   background-position: top;
-  -webkit-clip-path: polygon(0 12%, 100% 0, 100% 88%, 0 100%);
-  clip-path: polygon(0 12%, 100% 0, 100% 88%, 0 100%);
+  // -webkit-clip-path: polygon(0 12%, 100% 0, 100% 88%, 0 100%);
+  // clip-path: polygon(0 12%, 100% 0, 100% 88%, 0 100%);
   position: relative;
-  border-radius: 2px;
-  // transform: skewY(-7deg);
 
   &__text-box {
     @include center;
     text-align: center;
+  }
+
+  &__logo-box {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+  }
+
+  &__logo {
+    height: 12rem;
+    border-radius: $border-radius-rounded;
   }
 }

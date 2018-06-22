@@ -18,36 +18,38 @@
               menu.checked = false
             }
         </script>
-        
+
     </head>
 
     <body>
 
-      <div class="navigation">
-        <input type="checkbox" id="navi-toggle" class="navigation__checkbox">
+      <div class="navbar">
 
-        <label for="navi-toggle" class="navigation__button">
-          <span class="navigation__icon">&nbsp;</span>
-        </label>
+        <div class="navigation">
+          <input type="checkbox" id="navi-toggle" class="navigation__checkbox">
 
-        <div class="navigation__background">&nbsp;</div>
+          <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+          </label>
 
-        <nav class="navigation__nav">
-          <ul class="navigation__list">
-            <li class="navigation__item"><a onclick="toggleMenu()" href="#section-about" class="navigation__link"><span>01</span>About Ganesha Shala</a></li>
-            <li class="navigation__item"><a onclick="toggleMenu()" href="#section-features" class="navigation__link"><span>02</span>Benefits of Asthanga Yoga</a></li>
-            <li class="navigation__item"><a onclick="toggleMenu()" href="#section-events" class="navigation__link"><span>03</span>Featured Events</a></li>
-            <li class="navigation__item"><a onclick="toggleMenu()" href="#section-testimonials" class="navigation__link"><span>04</span>Student Testimonials</a></li>
-            <li class="navigation__item"><a onclick="toggleMenu()" href="#section-subscribe" class="navigation__link"><span>05</span>Subscribe to our Newsletter</a></li>
-          </ul>
-        </nav>
-      </div>
+          <div class="navigation__background">&nbsp;</div>
 
-      <div class="logo-box">
-        <a href="#"><img src="img/elephant_small.png" alt="Logo" class="logo"></a>
+          <nav class="navigation__nav">
+            <ul class="navigation__list">
+              <li class="navigation__item"><a onclick="toggleMenu()" href="#section-about" class="navigation__link"><span>01</span>About Ganesha Shala</a></li>
+              <li class="navigation__item"><a onclick="toggleMenu()" href="#section-features" class="navigation__link"><span>02</span>Benefits of Asthanga Yoga</a></li>
+              <li class="navigation__item"><a onclick="toggleMenu()" href="#section-events" class="navigation__link"><span>03</span>Featured Events</a></li>
+              <li class="navigation__item"><a onclick="toggleMenu()" href="#section-testimonials" class="navigation__link"><span>04</span>Student Testimonials</a></li>
+              <li class="navigation__item"><a onclick="toggleMenu()" href="#section-subscribe" class="navigation__link"><span>05</span>Subscribe to our Newsletter</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
 
       <header class="header">
+        <div class="header__logo-box">
+          <a href="#"><img src="img/elephant_small.png" alt="Logo" class="header__logo"></a>
+        </div>
         <div class="header__text-box">
           <h1 class="heading-primary">
             <span class="heading-primary--main">Ganesha Shala</span>
@@ -59,7 +61,7 @@
 
       <section class="section-about" id="section-about">
         <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary">
+          <h2 class="heading-secondary u-margin-bottom-medium">
             About Ganesha Shala
           </h2>
         </div>
@@ -99,7 +101,7 @@
             <div class="col-1-of-4">
               <div class="feature-box">
                 <i class="feature-box__icon icon-basic-heart"></i>
-                <h3 class="heading-tertiary u-margin-bottom-small">Come breathe with us</h3>
+                <h3 class="heading-tertiary u-margin-bottom-small">Breathe with us</h3>
                 <p class="feature-box__text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsam illum officiis reiciendis pariatur.
                 </p>
@@ -127,8 +129,8 @@
         </div>
       </section>
 
-      <section class="section-events">
-        <div class="u-center-text u-margin-bottom-medium" id="section-events">
+      <section class="section-events" id="section-events">
+        <div class="u-center-text u-margin-bottom-big" >
           <h2 class="heading-secondary">
             Upcoming Events
           </h2>
@@ -225,12 +227,12 @@
             </div>
           </div>
         </div>
-        <div class="u-center-text u-margin-top-small">
+        <div class="u-center-text">
           <a href="" class="btn-text">All Events &rarr;</a>
         </div>
       </section>
 
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="section-testimonials">
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
             <source src="img/video.mp4" type="video/mp4"></source>
@@ -238,7 +240,7 @@
             Your browser is not supported!
           </video>
         </div>
-        <div class="u-center-text u-margin-bottom-medium" id="section-testimonials">
+        <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
             What our students say
           </h2>
@@ -279,7 +281,7 @@
               <form action="#" class="form">
                 <div class="u-margin-bottom-medium">
                   <h2 class="heading-secondary">
-                    Subscribe to our newsletter
+                    Please Subscribe!
                   </h2>
                 </div>
 

@@ -8,11 +8,19 @@
 
 html {
   // this defines what 1rem is
-  font-size: 62.5%;
+  font-size: 50%; //1rem = 10px; 10px/20px = 50%
+
+  @include respond(tab-land) { //width < 1200?
+    font-size: 45%; //1rem = 9px;
+  }
+  @include respond(tab-port) { //width < 600?
+    font-size: 40%; //1rem = 8px;
+  }
+  @include respond(big-desktop) {
+    font-size: 60%; //1rem = 12px;
+  }
 }
 
 body {
-  color: $color-grey-dark;
-  padding: 2rem;
   box-sizing: border-box;
 }

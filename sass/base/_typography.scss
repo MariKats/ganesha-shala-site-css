@@ -1,7 +1,10 @@
 body {
-  font-family: "Nueva Std", sans-serif;
+  font-family: "Nueva Std", "Lato", sans-serif;
+  // font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
+  color: $color-grey-dark;
+  padding: 2rem;
 }
 
 @font-face {
@@ -12,14 +15,17 @@ body {
 .heading-primary {
   color: $color-white;
   text-transform: uppercase;
+
   backface-visibility: hidden;
   margin-bottom: 6rem;
   font-family: $font-nueva-bold;
 
   &--main {
     display: block;
-    font-size: 4rem;
-    letter-spacing: 2rem;
+    font-size: 6.5rem;
+    font-weight: 400;
+    letter-spacing: 1.5rem;
+
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -27,21 +33,22 @@ body {
 
   &--sub {
     display: block;
-    font-size: 2rem;
-    letter-spacing: 1.7rem;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1.8rem;
     animation: moveInRight 1s ease-out;
   }
 }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase;
   background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
   display: inline-block;
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: 2px;
+  letter-spacing: .2rem;
   transition: all .2s;
 
    &:hover {

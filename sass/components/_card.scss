@@ -4,18 +4,18 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem;
-  position: relative;
+  height: 53rem;
+  width: auto;
 
   &__side {
-  height: 50rem;
+  height: 53rem;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   backface-visibility: hidden;
   transition: all .8s ease;
-  border-radius: 3px;
+  border-radius: $border-radius-rounded;
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
   &--front {
@@ -43,7 +43,7 @@
   //FRONT SIDE STYLING
   &__picture {
     background-size: cover;
-    height: 20rem;
+    height: 22.5rem;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
@@ -69,14 +69,16 @@
     text-transform: uppercase;
     color: $color-white;
     position: absolute;
-    top: 12rem;
+    top: 13.4rem;
     right: 2rem;
     text-align: right;
     width: 75%;
+    transform: skewY(-5deg);
   }
 
   &__heading-span {
     padding: 1rem 1.5rem;
+    border-radius: $border-radius-normal;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
 
