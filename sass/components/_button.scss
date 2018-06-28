@@ -13,6 +13,10 @@
     //Change for the <button> element
     border: none;
     cursor: pointer;
+
+    @include respond(tab-land){
+      padding: 1.25rem 2rem;
+    }
   }
 
   &:hover {

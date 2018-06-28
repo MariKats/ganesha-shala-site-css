@@ -26,6 +26,9 @@
   &__left {
     width: 33.33333%;
     display: table-cell;
+    @include respond(tab-port){
+      width: 0%;
+    }
   }
 
   &__right {
@@ -33,6 +36,9 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+    @include respond(tab-port){
+      width: 100%;
+    }
   }
 
   &__img {
@@ -56,6 +62,19 @@
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+
+    @include respond(tab-land){
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+
+      -moz-column-count: 1;
+      -moz-column-gap: 0; //1em = 14px;
+      -moz-column-rule: 0;
+
+      column-count: 1;
+      column-gap: 0; //1em = 14px;
+      column-rule: 0;
+    }
   }
 
   //Open states
@@ -66,7 +85,10 @@
 
   &:target &__content {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1.2);
+    @include respond(phone){
+      transform: translate(-50%, -50%) scale(1);
+    }
   }
 
   &__close {

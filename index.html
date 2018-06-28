@@ -6,8 +6,14 @@
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
+        <!-- development -->
         <link rel="stylesheet" href="css/icon-font.css">
         <link rel="stylesheet" href="css/style.css">
+
+        <!-- production -->
+        <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+
+
         <link rel="shortcut icon" type="image/png" href="img/favicon-96x96.png">
 
         <title>Ganesha Shala | Ashtanga Yoga</title>
@@ -23,37 +29,34 @@
 
     <body>
 
-      <div class="navbar">
+      <div class="navigation">
+        <input type="checkbox" id="navi-toggle" class="navigation__checkbox">
 
-        <div class="navigation">
-          <input type="checkbox" id="navi-toggle" class="navigation__checkbox">
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
 
-          <label for="navi-toggle" class="navigation__button">
-            <span class="navigation__icon">&nbsp;</span>
-          </label>
+        <div class="navigation__background">&nbsp;</div>
 
-          <div class="navigation__background">&nbsp;</div>
-
-          <nav class="navigation__nav">
-            <ul class="navigation__list">
-              <li class="navigation__item"><a onclick="toggleMenu()" href="#section-about" class="navigation__link"><span>01</span>About Ganesha Shala</a></li>
-              <li class="navigation__item"><a onclick="toggleMenu()" href="#section-features" class="navigation__link"><span>02</span>Benefits of Asthanga Yoga</a></li>
-              <li class="navigation__item"><a onclick="toggleMenu()" href="#section-events" class="navigation__link"><span>03</span>Featured Events</a></li>
-              <li class="navigation__item"><a onclick="toggleMenu()" href="#section-testimonials" class="navigation__link"><span>04</span>Student Testimonials</a></li>
-              <li class="navigation__item"><a onclick="toggleMenu()" href="#section-subscribe" class="navigation__link"><span>05</span>Subscribe to our Newsletter</a></li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a onclick="toggleMenu()" href="#section-about" class="navigation__link"><span>01</span>About Ganesha Shala</a></li>
+            <li class="navigation__item"><a onclick="toggleMenu()" href="#section-features" class="navigation__link"><span>02</span>Benefits of Asthanga Yoga</a></li>
+            <li class="navigation__item"><a onclick="toggleMenu()" href="#section-events" class="navigation__link"><span>03</span>Featured Events</a></li>
+            <li class="navigation__item"><a onclick="toggleMenu()" href="#section-testimonials" class="navigation__link"><span>04</span>Student Testimonials</a></li>
+            <li class="navigation__item"><a onclick="toggleMenu()" href="#section-subscribe" class="navigation__link"><span>05</span>Subscribe to our Newsletter</a></li>
+          </ul>
+        </nav>
       </div>
 
       <header class="header">
         <div class="header__logo-box">
-          <a href="#"><img src="img/elephant_small.png" alt="Logo" class="header__logo"></a>
+          <a href="#"><img src="img/elephant_transparent-white.png" alt="Logo" class="header__logo"></a>
         </div>
         <div class="header__text-box">
           <h1 class="heading-primary">
-            <span class="heading-primary--main">Ganesha Shala</span>
-            <span class="heading-primary--sub"> Live - Love - Breathe</span>
+            <span class="heading-primary--main">Ganesha&nbsp;Shala</span>
+            <span class="heading-primary--sub"> Live&nbsp;-&nbsp;Love&nbsp;-&nbsp;Breathe</span>
           </h1>
           <a href="#popup-schedule" class="btn btn--white btn--animated">See our schedule</a>
         </div>
@@ -61,7 +64,7 @@
 
       <section class="section-about" id="section-about">
         <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary u-margin-bottom-medium">
+          <h2 class="heading-secondary">
             About Ganesha Shala
           </h2>
         </div>
@@ -78,9 +81,30 @@
           </div>
           <div class="col-1-of-2">
             <div class="composition">
+
+              <img srcset="img/composition1-small.jpg 300w, img/composition1-medium.jpg 1000w, img/composition1.jpg 5000w"
+                   sizes="(max-width: 60em) 22vh (max-width: 45em) 18vh, (max-width: 30em) 27vh, 300px"
+                   alt="Photo 1"
+                   class="composition__photo composition__photo--p1"
+                   src="img/composition1.jpg">
+
+              <img srcset="img/composition2-small.jpg 300w, img/composition2-medium.jpg 1000w, img/composition2.jpg 5000w"
+                   sizes="(max-width: 60em) 22vh (max-width: 45em) 20vh, (max-width: 30em) 30vh, 300px"
+                   alt="Photo 2"
+                   class="composition__photo composition__photo--p2"
+                   src="img/composition2.jpg">
+
+              <img srcset="img/composition3-small.jpg 300w, img/composition3-medium.jpg 1000w, img/composition3.jpg 5000w"
+                   sizes="(max-width: 45em) 22vh (max-width: 45em) 18vh, (max-width: 30em) 27vh, 300px"
+                   alt="Photo 3"
+                   class="composition__photo composition__photo--p3"
+                   src="img/composition3.jpg">
+
+              <!--
               <img src="img/composition1.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
               <img src="img/composition2.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
               <img src="img/composition3.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+              -->
             </div>
           </div>
         </div>
@@ -248,7 +272,11 @@
         <div class="row">
           <div class="testimonial">
             <figure class="testimonial__shape">
-              <img class="testimonial__img" src="img/person4.jpg" alt="Person 1">
+              <img srcset="img/person4-small.jpg 300w, img/person4.jpg 1000w"
+                   sizes="(max-width: 45em) 20vh, (max-width: 30em) 30vh, 200px"
+                   alt="Person 1"
+                   class="testimonial__img"
+                   src="img/person4.jpg">
               <figcaption class="testimonial__caption">Mary Jane</figcaption>
             </figure>
             <div class="testimonial__text">
@@ -260,7 +288,11 @@
         <div class="row">
           <div class="testimonial">
             <figure class="testimonial__shape">
-              <img class="testimonial__img" src="img/person1.jpg" alt="Person 1">
+              <img srcset="img/person1-small.jpg 200w, img/person1.jpg 1000w"
+                   sizes="(max-width: 45em) 20vh, (max-width: 30em) 30vh, 300px"
+                   alt="Person 2"
+                   class="testimonial__img"
+                   src="img/person1.jpg">
               <figcaption class="testimonial__caption">Chris Black</figcaption>
             </figure>
             <div class="testimonial__text">
@@ -312,7 +344,10 @@
 
       <footer class="footer">
         <div class="footer__logo-box">
-          <img src="img/elephant_transparent.png" alt="logo" class="footer__logo">
+          <picture class="footer__logo">
+            <source srcset="img/elephant_transparent_small.png" media="(max-width: 45em)">
+            <img src="img/elephant_transparent.png" alt="logo">
+          </picture>
         </div>
         <div class="row">
           <div class="col-1-of-2">
@@ -334,11 +369,13 @@
         </div>
       </footer>
 
-      <div class="popup" id="popup">
+      <div class="popup" id="popup" onclick="location.href='#section-events'">
         <div class="popup__content">
-          <!-- <div class="popup__background">&nbsp;</div> -->
           <div class="popup__left">
-            <img class="popup__img" src="img/serenity.jpg" alt="Serenity">
+            <img srcset="img/serenity-small.jpg 1x, img/serenity.jpg 2x"
+                 alt="Serenity"
+                 class="popup__img"
+                 src="img/serenity.jpg">
           </div>
           <div class="popup__right">
             <a href="#section-events" class="popup__close popup__close--booking">&times;</a>
@@ -347,12 +384,12 @@
             <p class="popup__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla gravida odio, vitae ultricies risus sagittis eget. Suspendisse consectetur, lectus ut cursus consectetur, magna odio tempus nulla, sed ullamcorper lectus lacus vitae nisi. Fusce volutpat diam eu metus lacinia faucibus. Vivamus ac finibus dui. Nunc et tortor ac nulla iaculis porttitor in ut quam. Etiam sit amet suscipit odio. Etiam mi lectus, posuere quis interdum ac, rutrum sed purus. Curabitur blandit nisi quis erat ullamcorper, ut pellentesque enim posuere.
             </p>
-            <a href="#" class="btn btn--dark">Book now</a>
+            <a href="#" class="btn-text">Book now &rarr;</a>
           </div>
         </div>
       </div>
 
-      <div class="popup" id="popup-schedule">
+      <div class="popup" id="popup-schedule" onclick="location.href='#'">
         <div class="popup__content">
           <a href="#" class="popup__close popup__close--schedule">&times;</a>
           <img class="popup__img" src="img/schedule.jpg" alt="Serenity">
