@@ -1,402 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- development -->
-        <link rel="stylesheet" href="css/icon-font.css">
-        <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
-        <!-- production -->
-        <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+  <!-- development -->
+  <!-- <link rel="stylesheet" href="css/icon-font.css">
+        <link rel="stylesheet" href="css/style.css"> -->
+
+  <!-- production -->
+  <link rel="stylesheet" href="css/style.min.css">
 
 
-        <link rel="shortcut icon" type="image/png" href="img/favicon-96x96.png">
+  <link rel="shortcut icon" type="image/png" href="img/favicon-96x96.png">
 
-        <title>Ganesha Shala | Ashtanga Yoga</title>
+  <title>Ganesha Shala | Ashtanga Yoga</title>
 
-        <script type="text/javascript">
-          let toggleMenu = () => {
-              let menu = document.getElementById('navi-toggle')
-              menu.checked = false
-            }
-        </script>
+  <script type="text/javascript">
+    let toggleMenu = () => {
+      let menu = document.getElementById('navi-toggle')
+      menu.checked = false
+    }
+  </script>
 
-    </head>
+</head>
 
-    <body>
+<body>
 
-      <div class="navigation">
-        <input type="checkbox" id="navi-toggle" class="navigation__checkbox">
+  <div class="navigation">
+    <input type="checkbox" id="navi-toggle" class="navigation__checkbox">
 
-        <label for="navi-toggle" class="navigation__button">
-          <span class="navigation__icon">&nbsp;</span>
-        </label>
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
 
-        <div class="navigation__background">&nbsp;</div>
+    <div class="navigation__background">&nbsp;</div>
 
-        <nav class="navigation__nav">
-          <ul class="navigation__list">
-            <li class="navigation__item"><a onclick="toggleMenu()" href="#section-about" class="navigation__link"><span>01</span>About Ganesha Shala</a></li>
-            <li class="navigation__item"><a onclick="toggleMenu()" href="#section-features" class="navigation__link"><span>02</span>Benefits of Asthanga Yoga</a></li>
-            <li class="navigation__item"><a onclick="toggleMenu()" href="#section-events" class="navigation__link"><span>03</span>Featured Events</a></li>
-            <li class="navigation__item"><a onclick="toggleMenu()" href="#section-testimonials" class="navigation__link"><span>04</span>Student Testimonials</a></li>
-            <li class="navigation__item"><a onclick="toggleMenu()" href="#section-subscribe" class="navigation__link"><span>05</span>Subscribe to our Newsletter</a></li>
-          </ul>
-        </nav>
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a onclick="toggleMenu()" href="#section-about" class="navigation__link">
+            <span>01</span>About Ganesha Shala</a>
+        </li>
+        <li class="navigation__item">
+          <a onclick="toggleMenu()" href="#section-features" class="navigation__link">
+            <span>02</span>Benefits of Asthanga Yoga</a>
+        </li>
+        <li class="navigation__item">
+          <a onclick="toggleMenu()" href="#section-events" class="navigation__link">
+            <span>03</span>Featured Events</a>
+        </li>
+        <li class="navigation__item">
+          <a onclick="toggleMenu()" href="#section-testimonials" class="navigation__link">
+            <span>04</span>Student Testimonials</a>
+        </li>
+        <li class="navigation__item">
+          <a onclick="toggleMenu()" href="#section-subscribe" class="navigation__link">
+            <span>05</span>Subscribe to our Newsletter</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <header class="header">
+    <div class="header__logo-box">
+      <a href="#">
+        <img src="img/elephant_transparent-white.png" alt="Logo" class="header__logo">
+      </a>
+    </div>
+    <div class="header__text-box">
+      <h1 class="heading-primary">
+        <span class="heading-primary--main">Ganesha&nbsp;Shala</span>
+        <span class="heading-primary--sub"> Live&nbsp;-&nbsp;Love&nbsp;-&nbsp;Breathe</span>
+      </h1>
+      <a href="#popup-schedule" class="btn btn--white btn--animated">See our schedule</a>
+    </div>
+  </header>
+
+  <section class="section-about" id="section-about">
+    <div class="u-center-text u-margin-bottom-big">
+      <h2 class="heading-secondary">
+        About Ganesha Shala
+      </h2>
+    </div>
+    <div class="row">
+      <div class="col-1-of-2">
+        <h3 class="heading-tertiary u-margin-bottom-medium">Asthanga practice for better living</h3>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsam illum officiis reiciendis pariatur assumenda enim similique
+          hic praesentium, sit quisquam aliquam impedit, minus consequatur adipisci! Repellat aliquam, itaque ipsam?
+        </p>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsam illum officiis reiciendis pariatur assumenda enim similique
+          hic praesentium, sit quisquam aliquam impedit.
+        </p>
+        <a href="#" class="btn-text">Learn More &rarr;</a>
       </div>
+      <div class="col-1-of-2">
+        <div class="composition">
 
-      <header class="header">
-        <div class="header__logo-box">
-          <a href="#"><img src="img/elephant_transparent-white.png" alt="Logo" class="header__logo"></a>
-        </div>
-        <div class="header__text-box">
-          <h1 class="heading-primary">
-            <span class="heading-primary--main">Ganesha&nbsp;Shala</span>
-            <span class="heading-primary--sub"> Live&nbsp;-&nbsp;Love&nbsp;-&nbsp;Breathe</span>
-          </h1>
-          <a href="#popup-schedule" class="btn btn--white btn--animated">See our schedule</a>
-        </div>
-      </header>
+          <img srcset="img/composition1-small.jpg 300w, img/composition1-medium.jpg 1000w, img/composition1.jpg 5000w" sizes="(max-width: 60em) 22vh (max-width: 45em) 18vh, (max-width: 30em) 27vh, 300px"
+            alt="Photo 1" class="composition__photo composition__photo--p1" src="img/composition1.jpg">
 
-      <section class="section-about" id="section-about">
-        <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary">
-            About Ganesha Shala
-          </h2>
-        </div>
-        <div class="row">
-          <div class="col-1-of-2">
-            <h3 class="heading-tertiary u-margin-bottom-medium">Asthanga practice for better living</h3>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsam illum officiis reiciendis pariatur assumenda enim similique hic praesentium, sit quisquam aliquam impedit, minus consequatur adipisci! Repellat aliquam, itaque ipsam?
-            </p>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsam illum officiis reiciendis pariatur assumenda enim similique hic praesentium, sit quisquam aliquam impedit.
-            </p>
-            <a href="#" class="btn-text">Learn More &rarr;</a>
-          </div>
-          <div class="col-1-of-2">
-            <div class="composition">
+          <img srcset="img/composition2-small.jpg 300w, img/composition2-medium.jpg 1000w, img/composition2.jpg 5000w" sizes="(max-width: 60em) 22vh (max-width: 45em) 20vh, (max-width: 30em) 30vh, 300px"
+            alt="Photo 2" class="composition__photo composition__photo--p2" src="img/composition2.jpg">
 
-              <img srcset="img/composition1-small.jpg 300w, img/composition1-medium.jpg 1000w, img/composition1.jpg 5000w"
-                   sizes="(max-width: 60em) 22vh (max-width: 45em) 18vh, (max-width: 30em) 27vh, 300px"
-                   alt="Photo 1"
-                   class="composition__photo composition__photo--p1"
-                   src="img/composition1.jpg">
+          <img srcset="img/composition3-small.jpg 300w, img/composition3-medium.jpg 1000w, img/composition3.jpg 5000w" sizes="(max-width: 45em) 22vh (max-width: 45em) 18vh, (max-width: 30em) 27vh, 300px"
+            alt="Photo 3" class="composition__photo composition__photo--p3" src="img/composition3.jpg">
 
-              <img srcset="img/composition2-small.jpg 300w, img/composition2-medium.jpg 1000w, img/composition2.jpg 5000w"
-                   sizes="(max-width: 60em) 22vh (max-width: 45em) 20vh, (max-width: 30em) 30vh, 300px"
-                   alt="Photo 2"
-                   class="composition__photo composition__photo--p2"
-                   src="img/composition2.jpg">
-
-              <img srcset="img/composition3-small.jpg 300w, img/composition3-medium.jpg 1000w, img/composition3.jpg 5000w"
-                   sizes="(max-width: 45em) 22vh (max-width: 45em) 18vh, (max-width: 30em) 27vh, 300px"
-                   alt="Photo 3"
-                   class="composition__photo composition__photo--p3"
-                   src="img/composition3.jpg">
-
-              <!--
+          <!--
               <img src="img/composition1.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
               <img src="img/composition2.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
               <img src="img/composition3.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
               -->
-            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-features" id="section-features">
+    <div class="section-features__features-box">
+      <div class="row">
+        <div class="col-1-of-4">
+          <div class="feature-box">
+            <i class="feature-box__icon icon-basic-heart"></i>
+            <h3 class="heading-tertiary u-margin-bottom-small">Quiet and Serene</h3>
+            <p class="feature-box__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsam illum officiis reiciendis pariatur.
+            </p>
           </div>
         </div>
-      </section>
-
-      <section class="section-features" id="section-features">
-        <div class="section-features__features-box">
-          <div class="row">
-            <div class="col-1-of-4">
-              <div class="feature-box">
-                <i class="feature-box__icon icon-basic-heart"></i>
-                <h3 class="heading-tertiary u-margin-bottom-small">Quiet and Serene</h3>
-                <p class="feature-box__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsam illum officiis reiciendis pariatur.
-                </p>
-              </div>
-            </div>
-            <div class="col-1-of-4">
-              <div class="feature-box">
-                <i class="feature-box__icon icon-basic-heart"></i>
-                <h3 class="heading-tertiary u-margin-bottom-small">Breathe with us</h3>
-                <p class="feature-box__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsam illum officiis reiciendis pariatur.
-                </p>
-              </div>
-            </div>
-            <div class="col-1-of-4">
-              <div class="feature-box">
-                <i class="feature-box__icon icon-basic-heart"></i>
-                <h3 class="heading-tertiary u-margin-bottom-small">Better Living</h3>
-                <p class="features-box__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsam illum officiis reiciendis pariatur.
-                </p>
-              </div>
-            </div>
-            <div class="col-1-of-4">
-              <div class="feature-box">
-                <i class="feature-box__icon icon-basic-heart"></i>
-                <h3 class="heading-tertiary u-margin-bottom-small">Love and Light</h3>
-                <p class="feature-box__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsam illum officiis reiciendis pariatur.
-                </p>
-              </div>
-            </div>
+        <div class="col-1-of-4">
+          <div class="feature-box">
+            <i class="feature-box__icon icon-basic-heart"></i>
+            <h3 class="heading-tertiary u-margin-bottom-small">Breathe with us</h3>
+            <p class="feature-box__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsam illum officiis reiciendis pariatur.
+            </p>
           </div>
         </div>
-      </section>
-
-      <section class="section-events" id="section-events">
-        <div class="u-center-text u-margin-bottom-big" >
-          <h2 class="heading-secondary">
-            Upcoming Events
-          </h2>
-        </div>
-        <div class="row">
-          <div class="col-1-of-3">
-            <div class="card">
-              <div class="card__side card__side--front">
-                <div class="card__picture card__picture--1">
-                  &nbsp;
-                </div>
-                <h4 class="card__heading">
-                  <span class="card__heading-span card__heading-span--1">Asthanga Worshop</span>
-                </h4>
-                <div class="card__details">
-                  <ul>
-                    <li>2 hours of guided practice</li>
-                    <li>In-depth discussion of poses</li>
-                    <li>Followed by tea & snacks</li>
-                    <li>Up to 30 people</li>
-                    <li>All levels welcome</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card__side card__side--back card__side--back--1">
-                <div class="card__cta">
-                  <div class="card__price-box">
-                    <p class="card__price-only">Only</p>
-                    <p class="card__price-value">€79</p>
-                  </div>
-                  <a href="#popup" class="btn btn--white">Book now!</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-1-of-3">
-            <div class="card">
-              <div class="card__side card__side--front">
-                <div class="card__picture card__picture--2">
-                  &nbsp;
-                </div>
-                <h4 class="card__heading">
-                  <span class="card__heading-span card__heading-span--2">Teachers' Training</span>
-                </h4>
-                <div class="card__details">
-                  <ul>
-                    <li>3-week intensive couse</li>
-                    <li>Primary series taught</li>
-                    <li>Certification of completion</li>
-                    <li>Up to 30 people</li>
-                    <li>At least 1 year of prior practice</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card__side card__side--back card__side--back--2">
-                <div class="card__cta">
-                  <div class="card__price-box">
-                    <p class="card__price-only">Only</p>
-                    <p class="card__price-value">€497</p>
-                  </div>
-                  <a href="#popup" class="btn btn--white">Book now!</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-1-of-3">
-            <div class="card">
-              <div class="card__side card__side--front">
-                <div class="card__picture card__picture--3">
-                  &nbsp;
-                </div>
-                <h4 class="card__heading">
-                  <span class="card__heading-span card__heading-span--3">Summer Yoga Retreat</span>
-                </h4>
-                <div class="card__details">
-                  <ul>
-                    <li>1 week in magical Sifnos</li>
-                    <li>Lovely hotel and vegan food</li>
-                    <li>3 hours of practice per day</li>
-                    <li>Up to 20 people</li>
-                    <li>All levels welcome</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card__side card__side--back card__side--back--3">
-                <div class="card__cta">
-                  <div class="card__price-box">
-                    <p class="card__price-only">Only</p>
-                    <p class="card__price-value">€697</p>
-                  </div>
-                  <a href="#popup" class="btn btn--white">Book now!</a>
-                </div>
-              </div>
-            </div>
+        <div class="col-1-of-4">
+          <div class="feature-box">
+            <i class="feature-box__icon icon-basic-heart"></i>
+            <h3 class="heading-tertiary u-margin-bottom-small">Better Living</h3>
+            <p class="features-box__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsam illum officiis reiciendis pariatur.
+            </p>
           </div>
         </div>
-        <div class="u-center-text">
-          <a href="" class="btn-text">All Events &rarr;</a>
-        </div>
-      </section>
-
-      <section class="section-testimonials" id="section-testimonials">
-        <div class="bg-video">
-          <video class="bg-video__content" autoplay muted loop>
-            <source src="img/video.mp4" type="video/mp4"></source>
-            <source src="img/video.webm" type="video/webm"></source>
-            Your browser is not supported!
-          </video>
-        </div>
-        <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary">
-            What our students say
-          </h2>
-        </div>
-        <div class="row">
-          <div class="testimonial">
-            <figure class="testimonial__shape">
-              <img srcset="img/person4-small.jpg 300w, img/person4.jpg 1000w"
-                   sizes="(max-width: 45em) 20vh, (max-width: 30em) 30vh, 200px"
-                   alt="Person 1"
-                   class="testimonial__img"
-                   src="img/person4.jpg">
-              <figcaption class="testimonial__caption">Mary Jane</figcaption>
-            </figure>
-            <div class="testimonial__text">
-              <h3 class="heading-tertiary u-margin-bottom-small">Zoe is the best teacher ever.</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis reprehenderit nostrum quam quidem aliquid incidunt cum laudantium, doloribus veniam nulla minima eveniet nam mollitia odio? Unde soluta laudantium vero aperiam!</p>
-            </div>
+        <div class="col-1-of-4">
+          <div class="feature-box">
+            <i class="feature-box__icon icon-basic-heart"></i>
+            <h3 class="heading-tertiary u-margin-bottom-small">Love and Light</h3>
+            <p class="feature-box__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ipsam illum officiis reiciendis pariatur.
+            </p>
           </div>
         </div>
-        <div class="row">
-          <div class="testimonial">
-            <figure class="testimonial__shape">
-              <img srcset="img/person1-small.jpg 200w, img/person1.jpg 1000w"
-                   sizes="(max-width: 45em) 20vh, (max-width: 30em) 30vh, 300px"
-                   alt="Person 2"
-                   class="testimonial__img"
-                   src="img/person1.jpg">
-              <figcaption class="testimonial__caption">Chris Black</figcaption>
-            </figure>
-            <div class="testimonial__text">
-              <h3 class="heading-tertiary u-margin-bottom-small">Ganesha Shala for life.</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis reprehenderit nostrum quam quidem aliquid incidunt cum laudantium, doloribus veniam nulla minima eveniet nam mollitia odio? Unde soluta laudantium vero aperiam!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-events" id="section-events">
+    <div class="u-center-text u-margin-bottom-big">
+      <h2 class="heading-secondary">
+        Upcoming Events
+      </h2>
+    </div>
+    <div class="row">
+      <div class="col-1-of-3">
+        <div class="card">
+          <div class="card__side card__side--front">
+            <div class="card__picture card__picture--1">
+              &nbsp;
             </div>
-          </div>
-        </div>
-        <div class="u-center-text">
-          <a href="" class="btn-text">All Testimonials &rarr;</a>
-        </div>
-      </section>
-
-      <section class="section-subscribe" id="section-subscribe">
-        <div class="row">
-          <div class="subscribe">
-            <div class="subscribe__form">
-              <form action="#" class="form">
-                <div class="u-margin-bottom-medium">
-                  <h2 class="heading-secondary">
-                    Please Subscribe!
-                  </h2>
-                </div>
-
-                <div class="form__group">
-                  <input type="text" class="form__input" placeholder="First Name" id="first-name" required >
-                  <label for="first-name" class="form__label">First Name</label>
-                </div>
-
-                <div class="form__group">
-                  <input type="text" class="form__input" placeholder="Last Name" id="last-name" >
-                  <label for="last-name" class="form__label">Last Name</label>
-                </div>
-
-                <div class="form__group">
-                  <input type="email" class="form__input" placeholder="Email Address" id="email" required>
-                  <label for="email" class="form__label">Email Address</label>
-                </div>
-
-                <div class="form__group">
-                  <button class="btn btn--dark">Submit</button>
-                </div>
-
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer class="footer">
-        <div class="footer__logo-box">
-          <picture class="footer__logo">
-            <source srcset="img/elephant_transparent_small.png" media="(max-width: 45em)">
-            <img src="img/elephant_transparent.png" alt="logo">
-          </picture>
-        </div>
-        <div class="row">
-          <div class="col-1-of-2">
-            <div class="footer__navigation">
-              <ul class="footer__list">
-                <li class="footer__item"><a href="" class="footer__link">About</a></li>
-                <li class="footer__item"><a href="" class="footer__link">Contact Us</a></li>
-                <li class="footer__item"><a href="" class="footer__link">Careers</a></li>
-                <li class="footer__item"><a href="" class="footer__link">Terms</a></li>
-                <li class="footer__item"><a href="" class="footer__link">Privacy Policy</a></li>
+            <h4 class="card__heading">
+              <span class="card__heading-span card__heading-span--1">Asthanga Worshop</span>
+            </h4>
+            <div class="card__details">
+              <ul>
+                <li>2 hours of guided practice</li>
+                <li>In-depth discussion of poses</li>
+                <li>Followed by tea & snacks</li>
+                <li>Up to 30 people</li>
+                <li>All levels welcome</li>
               </ul>
             </div>
           </div>
-          <div class="col-1-of-2">
-            <p class="footer__copyright">
-              Built by <a href="" class="footer__link">Marianna Katsika</a>. The design of website is inspired by the Natours website which is a part of Jonas Schmedtmann's <a href="" class="footer__link">Advanced CSS and Sass course</a>. Credit and many thanks to <a href="" class="footer__link">Jonas Schmedtmann</a> for the original design and the great course.
-            </p>
-          </div>
-        </div>
-      </footer>
-
-      <div class="popup" id="popup" onclick="location.href='#section-events'">
-        <div class="popup__content">
-          <div class="popup__left">
-            <img srcset="img/serenity-small.jpg 1x, img/serenity.jpg 2x"
-                 alt="Serenity"
-                 class="popup__img"
-                 src="img/serenity.jpg">
-          </div>
-          <div class="popup__right">
-            <a href="#section-events" class="popup__close popup__close--booking">&times;</a>
-            <h2 class="heading-secondary u-margin-bottom-small">Start Booking Now</h2>
-            <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
-            <p class="popup__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla gravida odio, vitae ultricies risus sagittis eget. Suspendisse consectetur, lectus ut cursus consectetur, magna odio tempus nulla, sed ullamcorper lectus lacus vitae nisi. Fusce volutpat diam eu metus lacinia faucibus. Vivamus ac finibus dui. Nunc et tortor ac nulla iaculis porttitor in ut quam. Etiam sit amet suscipit odio. Etiam mi lectus, posuere quis interdum ac, rutrum sed purus. Curabitur blandit nisi quis erat ullamcorper, ut pellentesque enim posuere.
-            </p>
-            <a href="#" class="btn-text">Book now &rarr;</a>
+          <div class="card__side card__side--back card__side--back--1">
+            <div class="card__cta">
+              <div class="card__price-box">
+                <p class="card__price-only">Only</p>
+                <p class="card__price-value">€79</p>
+              </div>
+              <a href="#popup" class="btn btn--white">Book now!</a>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="popup" id="popup-schedule" onclick="location.href='#'">
-        <div class="popup__content">
-          <a href="#" class="popup__close popup__close--schedule">&times;</a>
-          <img class="popup__img" src="img/schedule.jpg" alt="Serenity">
+      <div class="col-1-of-3">
+        <div class="card">
+          <div class="card__side card__side--front">
+            <div class="card__picture card__picture--2">
+              &nbsp;
+            </div>
+            <h4 class="card__heading">
+              <span class="card__heading-span card__heading-span--2">Teachers' Training</span>
+            </h4>
+            <div class="card__details">
+              <ul>
+                <li>3-week intensive couse</li>
+                <li>Primary series taught</li>
+                <li>Certification of completion</li>
+                <li>Up to 30 people</li>
+                <li>At least 1 year of prior practice</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card__side card__side--back card__side--back--2">
+            <div class="card__cta">
+              <div class="card__price-box">
+                <p class="card__price-only">Only</p>
+                <p class="card__price-value">€497</p>
+              </div>
+              <a href="#popup" class="btn btn--white">Book now!</a>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="col-1-of-3">
+        <div class="card">
+          <div class="card__side card__side--front">
+            <div class="card__picture card__picture--3">
+              &nbsp;
+            </div>
+            <h4 class="card__heading">
+              <span class="card__heading-span card__heading-span--3">Summer Yoga Retreat</span>
+            </h4>
+            <div class="card__details">
+              <ul>
+                <li>1 week in magical Sifnos</li>
+                <li>Lovely hotel and vegan food</li>
+                <li>3 hours of practice per day</li>
+                <li>Up to 20 people</li>
+                <li>All levels welcome</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card__side card__side--back card__side--back--3">
+            <div class="card__cta">
+              <div class="card__price-box">
+                <p class="card__price-only">Only</p>
+                <p class="card__price-value">€697</p>
+              </div>
+              <a href="#popup" class="btn btn--white">Book now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="u-center-text">
+      <a href="" class="btn-text">All Events &rarr;</a>
+    </div>
+  </section>
 
-      <!-- <section class="grid-test">
+  <section class="section-testimonials" id="section-testimonials">
+    <div class="bg-video">
+      <video class="bg-video__content" autoplay muted loop>
+        <source src="img/video.mp4" type="video/mp4"></source>
+        <source src="img/video.webm" type="video/webm"></source>
+        Your browser is not supported!
+      </video>
+    </div>
+    <div class="u-center-text u-margin-bottom-big">
+      <h2 class="heading-secondary">
+        What our students say
+      </h2>
+    </div>
+    <div class="row">
+      <div class="testimonial">
+        <figure class="testimonial__shape">
+          <img srcset="img/person4-small.jpg 300w, img/person4.jpg 1000w" sizes="(max-width: 45em) 20vh, (max-width: 30em) 30vh, 200px"
+            alt="Person 1" class="testimonial__img" src="img/person4.jpg">
+          <figcaption class="testimonial__caption">Mary Jane</figcaption>
+        </figure>
+        <div class="testimonial__text">
+          <h3 class="heading-tertiary u-margin-bottom-small">Zoe is the best teacher ever.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis reprehenderit nostrum quam quidem aliquid incidunt
+            cum laudantium, doloribus veniam nulla minima eveniet nam mollitia odio? Unde soluta laudantium vero aperiam!</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="testimonial">
+        <figure class="testimonial__shape">
+          <img srcset="img/person1-small.jpg 200w, img/person1.jpg 1000w" sizes="(max-width: 45em) 20vh, (max-width: 30em) 30vh, 300px"
+            alt="Person 2" class="testimonial__img" src="img/person1.jpg">
+          <figcaption class="testimonial__caption">Chris Black</figcaption>
+        </figure>
+        <div class="testimonial__text">
+          <h3 class="heading-tertiary u-margin-bottom-small">Ganesha Shala for life.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis reprehenderit nostrum quam quidem aliquid incidunt
+            cum laudantium, doloribus veniam nulla minima eveniet nam mollitia odio? Unde soluta laudantium vero aperiam!</p>
+        </div>
+      </div>
+    </div>
+    <div class="u-center-text">
+      <a href="" class="btn-text">All Testimonials &rarr;</a>
+    </div>
+  </section>
+
+  <section class="section-subscribe" id="section-subscribe">
+    <div class="row">
+      <div class="subscribe">
+        <div class="subscribe__form">
+          <form action="#" class="form">
+            <div class="u-margin-bottom-medium">
+              <h2 class="heading-secondary">
+                Please Subscribe!
+              </h2>
+            </div>
+
+            <div class="form__group">
+              <input type="text" class="form__input" placeholder="First Name" id="first-name" required>
+              <label for="first-name" class="form__label">First Name</label>
+            </div>
+
+            <div class="form__group">
+              <input type="text" class="form__input" placeholder="Last Name" id="last-name">
+              <label for="last-name" class="form__label">Last Name</label>
+            </div>
+
+            <div class="form__group">
+              <input type="email" class="form__input" placeholder="Email Address" id="email" required>
+              <label for="email" class="form__label">Email Address</label>
+            </div>
+
+            <div class="form__group">
+              <button class="btn btn--dark">Submit</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__logo-box">
+      <picture class="footer__logo">
+        <source srcset="img/elephant_transparent_small.png" media="(max-width: 45em)">
+        <img src="img/elephant_transparent.png" alt="logo">
+      </picture>
+    </div>
+    <div class="row">
+      <div class="col-1-of-2">
+        <div class="footer__navigation">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="" class="footer__link">About</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Contact Us</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Careers</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Terms</a>
+            </li>
+            <li class="footer__item">
+              <a href="" class="footer__link">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-1-of-2">
+        <p class="footer__copyright">
+          Built by
+          <a href="" class="footer__link">Marianna Katsika</a>. The design of website is inspired by the Natours website which is a part of Jonas Schmedtmann's
+          <a href="" class="footer__link">Advanced CSS and Sass course</a>. Credit and many thanks to
+          <a href="" class="footer__link">Jonas Schmedtmann</a> for the original design and the great course.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="popup" id="popup" onclick="location.href='#section-events'">
+    <div class="popup__content">
+      <div class="popup__left">
+        <img srcset="img/serenity-small.jpg 1x, img/serenity.jpg 2x" alt="Serenity" class="popup__img" src="img/serenity.jpg">
+      </div>
+      <div class="popup__right">
+        <a href="#section-events" class="popup__close popup__close--booking">&times;</a>
+        <h2 class="heading-secondary u-margin-bottom-small">Start Booking Now</h2>
+        <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+        <p class="popup__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla gravida odio, vitae ultricies risus sagittis eget.
+          Suspendisse consectetur, lectus ut cursus consectetur, magna odio tempus nulla, sed ullamcorper lectus lacus vitae
+          nisi. Fusce volutpat diam eu metus lacinia faucibus. Vivamus ac finibus dui. Nunc et tortor ac nulla iaculis porttitor
+          in ut quam. Etiam sit amet suscipit odio. Etiam mi lectus, posuere quis interdum ac, rutrum sed purus. Curabitur
+          blandit nisi quis erat ullamcorper, ut pellentesque enim posuere.
+        </p>
+        <a href="#" class="btn-text">Book now &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="popup-schedule" onclick="location.href='#'">
+    <div class="popup__content">
+      <a href="#" class="popup__close popup__close--schedule">&times;</a>
+      <img class="popup__img" src="img/schedule.jpg" alt="Serenity">
+    </div>
+  </div>
+
+  <!-- <section class="grid-test">
       <div class="row">
       <div class="col-1-of-2">
       Col 1 of 2
@@ -463,5 +484,6 @@ Col 3 of 4
 </div>
 </div>
 </section> -->
-    </body>
+</body>
+
 </html>
